@@ -1,0 +1,92 @@
+# AI Knowledge Consultant 🤖
+
+## 🛠 Технологический стек
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-00A98F?style=for-the-badge&logo=vectorworks&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![TikToken](https://img.shields.io/badge/TikToken-000000?style=for-the-badge&logo=openai&logoColor=white)
+![Requests](https://img.shields.io/badge/Requests-000000?style=for-the-badge&logo=python&logoColor=white)
+
+AI-консультант для работы с базой знаний компании на основе RAG-архитектуры.
+
+## 🚀 Возможности
+
+- Интеллектуальный поиск по базе знаний компании
+- Ответы на вопросы о продуктах, услугах и политиках
+- Указание источников информации
+- Контекстно-зависимые ответы
+
+## 🛠 Технологии
+
+| 🦜 **LangChain** | Оркестрация RAG-цепочки и управление компонентами |
+| 🗄️ **FAISS** | Векторное хранение и эффективный семантический поиск |
+| 🧠 **OpenAI GPT-3.5-turbo** | Языковая модель для генерации точных ответов |
+| ⚡ **Google Colab** | Среда выполнения и экспериментов |
+
+## 📊 Архитектура решения
+- 📁 Исходные документы
+  ↓
+- 🔧 Обработка данных (Text Splitting)
+  ↓
+- 🧮 Векторизация (OpenAI Embeddings)
+  ↓
+- 🗄️ Векторное хранилище (FAISS)
+  ↓
+- 🔍 Семантический поиск (Retriever)
+  ↓
+- 🤖 Генерация ответов (ChatGPT)
+  ↓
+- 💬 Интеллектуальный ответ
+
+## 📁 Структура проекта
+├── 📊 data_processing/ # Обработка документов
+├── 🔍 vector_store/ # Векторные базы
+├── 🤖 consultant/ # Модуль консультанта
+└── 📚 knowledge_base/ # Исходные документы
+
+
+## ⚡ Быстрый старт
+
+```
+python
+# Инициализация консультанта
+consultant = create_knowledge_consultant(vector_store)
+
+# Задать вопрос
+answer, sources = ask_consultant(consultant, "Какие услуги предоставляет компания?")
+```
+## 📈 Результаты
+- Обработано: 2 документа (94K+ символов)
+- Создано: 163 чанка
+- Векторная база: 163 вектора (1536 измерений)
+- Среднее время ответа: 2-4 секунды
+
+## 🎯 Примеры вопросов
+- "Какие страховые услуги предоставляет компания?"
+- "Как работает обработка персональных данных?"
+- "Какие технологии анализа данных используются?"
+
+## 🔧 Настройка
+1. Установите зависимости:
+```
+bash
+pip install langchain langchain-openai faiss-cpu tiktoken
+```
+2. Настройте OpenAI API ключ:
+```
+python
+os.environ["OPENAI_API_KEY"] = "your-api-key"
+```
+
+📄 Лицензия
+MIT License
+
+
+
